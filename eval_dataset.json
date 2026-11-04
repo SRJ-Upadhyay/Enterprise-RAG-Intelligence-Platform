@@ -1,0 +1,50 @@
+[
+  {
+    "question": "What is a token, and why is one token not always equal to one word?",
+    "reference": "A token is a unit produced by a tokenizer that may be a whole common word, part of a word, punctuation, whitespace, or a control marker. Segmentation depends on the tokenizer, so one token is not reliably equal to one word."
+  },
+  {
+    "question": "What is cosine similarity and what does a value close to 1 mean?",
+    "reference": "Cosine similarity measures the angle between two vectors. A value closer to 1 means the vectors point in a similar direction."
+  },
+  {
+    "question": "What does a vector database store besides the vector itself?",
+    "reference": "A record commonly contains an ID, the vector, text or a pointer to the text, and metadata such as document ID, access group, language, version, timestamp, and source location."
+  },
+  {
+    "question": "What is the difference between RAG and fine-tuning?",
+    "reference": "RAG changes the context supplied at inference time by retrieving external information, while fine-tuning changes model parameters through additional training. RAG suits current or private documents, and fine-tuning suits consistent task behavior."
+  },
+  {
+    "question": "What are the steps in the offline ingestion path for RAG?",
+    "reference": "The offline ingestion path collects approved sources and preserves provenance, normalizes content, chunks it into retrievable units, embeds the chunks with a compatible model, and indexes the vectors with text or pointers and metadata."
+  },
+  {
+    "question": "How does metadata filtering protect private content?",
+    "reference": "Metadata filtering applies access constraints such as tenant or permission attributes during search, so unauthorized material is not returned. Access checks must be enforced in trusted application logic, not by prompt instructions."
+  },
+  {
+    "question": "What are the common failure modes of RAG, and how do you mitigate them?",
+    "reference": "Failure modes include a relevant source being missed, a wrong citation, a stale source being returned, private text being exposed, and instructions inside a document. Mitigations include improving chunking, query rewriting, and hybrid search; validating source IDs; tracking freshness; enforcing authorization; and treating retrieved content as data."
+  },
+  {
+    "question": "How does temperature change the next-token probabilities?",
+    "reference": "Temperature rescales the logits before softmax. Lower temperature concentrates probability on higher-scoring tokens, and higher temperature flattens the distribution. Temperature does not change learned parameters."
+  },
+  {
+    "question": "Why does training and inference use the model differently?",
+    "reference": "During training, parameters are adjusted from data to reduce a loss. During inference, the learned parameters are held fixed while the model computes an output."
+  },
+  {
+    "question": "What is overfitting and how can you detect it?",
+    "reference": "Overfitting is when a model learns training-specific details that do not generalize. It can be detected when training error keeps falling while validation error eventually rises, using held-out validation data."
+  },
+  {
+    "question": "What is the population of Mars?",
+    "reference": "The documents do not contain this information."
+  },
+  {
+    "question": "When is the annual bonus for managers decided?",
+    "reference": "The annual bonus for managers is decided in the November HR review cycle."
+  }
+]

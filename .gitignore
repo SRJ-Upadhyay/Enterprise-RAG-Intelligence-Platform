@@ -1,0 +1,28 @@
+# Secrets: never commit your API key
+.env
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local data and generated indexes
+chroma_db/
+data/uploads/
+data/documents/**/*.pdf
+data/documents/**/*.docx
+data/documents/**/*.txt
+data/documents/**/*.md
+!data/documents/.gitkeep
+
+# Evaluation output
+eval_results.csv
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

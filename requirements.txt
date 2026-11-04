@@ -1,0 +1,40 @@
+# ---------- Core ----------
+python-dotenv
+rich
+pandas
+
+# ---------- LangChain ----------
+langchain
+langchain-core
+ragas==0.2.15
+langchain-community==0.3.31
+langchain-text-splitters
+langchain-google-genai
+langchain-huggingface
+langchain-chroma
+
+# ---------- Vector store, embeddings, reranking ----------
+chromadb
+sentence-transformers
+rank-bm25
+# qdrant-client            # uncomment (and add langchain-qdrant) if you swap Chroma for Qdrant
+
+# ---------- Document loaders ----------
+pypdf
+docx2txt
+
+# ---------- API ----------
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+
+# ---------- Database (PostgreSQL) ----------
+sqlalchemy
+psycopg2-binary
+
+# ---------- Evaluation ----------
+ragas
+datasets
+
+streamlit
